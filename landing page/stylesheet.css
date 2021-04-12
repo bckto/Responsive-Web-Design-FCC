@@ -1,7 +1,10 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     background-color: #cdd7d6;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -16,7 +19,7 @@ body {
 .header {
     width: auto;
     display: flex;
-    background-color: #102542;
+    background-color: #43aa8b;
 }
 
 .product-image {
@@ -68,6 +71,7 @@ a {
 
 .pet-services {
     width: 700px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -83,11 +87,80 @@ a {
 }
 
 .pet-services-info-text {
+    margin-left: 10px;
     width: 800px;
 }
 
 .sub-title {
-    margin: -10px;
+    margin-top: 30px;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.pet-service-price-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 15px;
+    border: 1px solid #EEC261;
+    border-radius: 3px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.pet-service-price-info>.service {
+    background-color: #F4CC6C;
+    color: black;
+    padding: 15px 0;
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.pet-service-price-info>h2 {
+    margin-top: 15px;
+}
+
+.pet-service-price-info>ol {
+    margin: 15px 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.pet-service-price-info>ol>li {
+    padding: 5px 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.pet-service-price-info>button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+.pet-service-price-info>button:hover {
+    color: #fff;
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px #EEC261 solid;
+    border-radius: 2px;
+    background-color: #F4CC6C;
+    cursor: pointer;
 }
 
 .cat-tv {
@@ -104,5 +177,21 @@ a {
         padding: 10px;
         width: min-content;
         height: min-content;
+    }
+    .pet-services-info-text {
+        width: 100%;
+    }
+    .pet-service-price-info {
+        width: 200px;
+    }
+    .pet-service-price-info>.service {
+        width: 200px;
+    }
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-bar {
+        margin-left: 100px;
     }
 }
