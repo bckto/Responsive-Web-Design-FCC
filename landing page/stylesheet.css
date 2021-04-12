@@ -16,8 +16,14 @@ body {
     align-items: center;
 }
 
-.header {
+.form {
+    margin: 10px 0px;
+}
+
+.header,
+footer {
     width: auto;
+    height: 100px;
     display: flex;
     background-color: #43aa8b;
 }
@@ -25,11 +31,13 @@ body {
 .product-image {
     margin: 10px 0 10px 10px;
     position: absolute;
+    width: 80px;
+    height: 80px;
 }
 
 .nav-bar {
-    margin-left: 50px;
-    margin-top: 10px;
+    margin-left: 100px;
+    margin-top: 20px;
 }
 
 .nav-bar>ul {
@@ -67,6 +75,24 @@ body {
 
 a {
     text-decoration: none;
+}
+
+input[type='email'] {
+    width: 100%;
+    padding: 5px;
+}
+
+input[type='submit'] {
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+input[type='submit']:hover {
+    background-color: orange;
+    transition: background-color 1s;
 }
 
 .pet-services {
@@ -163,9 +189,24 @@ a {
     cursor: pointer;
 }
 
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title {
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .cat-tv {
-    width: 560px;
-    height: 315px;
+    padding: 10px;
+    border: 4px #EEC261 solid;
+    background-color: #fff;
+    margin: 10px;
 }
 
 @media all and (max-width: 480px) {
@@ -175,8 +216,8 @@ a {
     .cat-tv {
         margin: 10px;
         padding: 10px;
-        width: min-content;
-        height: min-content;
+        /* width: 60vw;
+        height: 60vh; */
     }
     .pet-services-info-text {
         width: 100%;
@@ -193,5 +234,9 @@ a {
     }
     .nav-bar {
         margin-left: 100px;
+    }
+    .product-image {
+        width: 80px;
+        height: 80px;
     }
 }

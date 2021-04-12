@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="stylesheet.css" />
     <title>Meow - Cat sitter</title>
 </head>
@@ -12,7 +13,7 @@
 <body>
     <header id="header" class="header">
         <div class="logo">
-            <img src="catIcon.svg" width="80" height="80" class="product-image" alt="Meow - cat sitter logo with yellow circle and the shadow of a cat inside" />
+            <img src="catIcon.svg" class="product-image" alt="Meow - cat sitter logo with yellow circle and the shadow of a cat inside" />
         </div>
         <nav id="nav-bar" class="nav-bar">
             <ul>
@@ -23,12 +24,18 @@
         </nav>
     </header>
     <div id="page-container" class="page-container">
-        <section id="form">
-            <h2>Send me weekly cat tips!</h2>
-            <form id="form" action="https://www.freecodecamp.com/email-submit" aria-label="Newsletter-form">
-                <input name="email" id="email" type="email" placeholder="Enter your email address" aria-label="Email-address-input" required /><input id="submit" type="submit" value="Subscribe to newsletter" class="btn" aria-label="Send-email" />
-            </form>
-        </section>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <section id="form" class="form">
+                <h2>Get 10% off on your first time!</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" aria-label="Newsletter-form">
+                    <input name="email" id="email" type="email" placeholder="Enter your email address" aria-label="Email-address-input" required /><input id="submit" type="submit" value="Subscribe to newsletter" class="btn" aria-label="Send-email" />
+                </form>
+            </section>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
         <section id="services">
             <h2 class="sub-title">Our services</h2>
             <div class="services-container">
@@ -37,15 +44,21 @@
                     <div class="pet-services-info">
                         <h3>Pet Sitter</h3>
                         <span class="pet-services-info-text">Et harum quidem rerum facilis est et expedita distinctio. Nam
-                libero tempore.</span>
-                    </div>
-                </div>
-                <div class="pet-services">
-                    <img src="shower.svg" width="50px" height="50px" alt="Shadow of a bathtub and shower on top of a yellow circle" />
+                libero tempore.</span
+              >
+            </div>
+          </div>
+          <div class="pet-services">
+            <img
+              src="shower.svg"
+              width="50px"
+              height="50px"
+              alt="Shadow of a bathtub and shower on top of a yellow circle"
+            />
 
-                    <div class="pet-services-info">
-                        <h3>Pet Saloon and Grooming</h3>
-                        <span class="pet-services-info-text">
+            <div class="pet-services-info">
+              <h3>Pet Saloon and Grooming</h3>
+              <span class="pet-services-info-text">
                 Ut enim ad minima veniam, quis nostrum exercitationem ullam
                 corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
                 consequatur.
@@ -103,9 +116,10 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="about">
-            <h2 class="sub-title">About us</h2>
-            <span class="pet-services-info-text">
+        <section id="about">
+            <h2 class="about-title">About us</h2>
+            <div class="about-section">
+                <span class="pet-services-info-text">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -114,6 +128,7 @@
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum."
         </span>
+            </div>
         </section>
         <section id="cat-TV" class="cat-tv">
             <iframe src="https://www.youtube.com/embed/6pbreU5ChmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
