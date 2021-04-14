@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F6BE9A;
+}
+
+.main-container {
+    width: 550px;
+    background-color: #faf4d3;
+    padding: 30px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.description>h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.description>span {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-element {
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.label-title {
+    font-weight: 600;
+}
+
+input[type='number'],
+input[type='text'],
+input[type='email'] {
+    width: 89%;
+    height: 30px;
+    margin: 15px 0;
+    border: 1px solid #eec2a7;
+    background-color: #fff;
+}
+
+input[type='text'] {
+    width: 30%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+input[type='number'] {
+    width: 10%;
+}
+
+select {
+    width: 175px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #eec2a7;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(arrowdown.svg) 95% / 10% no-repeat #fff;
+}
+
+.radio-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-text,
+.radio-text,
+.checkbox-text,
+.comments-text {
+    font-weight: 600;
+    margin: 15px 15px 10px 0;
+}
+
+.checkbox-options>input {
+    margin: 10px;
+}
+
+.checkbox-selection {
+    margin-top: 10px;
+}
+
+input[type='submit'] {
+    width: 100%;
+    background: #F6BE9A;
+    border-color: #F6BE9A;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+input[type='submit']:hover {
+    background-color: orange;
+    transition: background-color 2s;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    filter: hue-rotate(180deg) brightness(1);
+}
+
+.textbox-selection {
+    margin: 20px 0;
+}
+
+textarea {
+    margin: 10px 0;
+    resize: none;
+    width: 545px;
+    height: 80px;
+    border: 1px solid #eec2a7;
+}

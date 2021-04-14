@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div id="body" class="main-container">
+        <section class="description">
+            <h1 id="title"> Help us make better content!</h1>
+            <span id="description">We want you to know how much we appreaciate our clients. It would mean the world to us if you tell us which content you would like to see.</span>
+        </section>
+        <section class="form">
+            <form id="survey-form">
+                <div class="form-element">
+                    <label id="name-label" for="name" class="label-title"> Name</label>
+                    <input id="name" type="text" placeholder="Name" required/> <label id="number-label" for="number" class="label-title"> Date of Birth </label><input id="age" type="number" min="01" max="12" placeholder="Month" required/>
+                    <input id="age" type="number" min="01" max="31" placeholder="Day" required/>
+                    <input id="age" type="number" min="1930" max="2021" placeholder="Year" required/></div>
+                <div class="form-element"><label id="email-label" for="email" class="label-title"> E-mail</label>
+                    <input id="email" type="email" placeholder="E-mail" required/></div>
+        </section>
+        <section class="dropdown-selection">
+            <span class="dropdown-text">What did you like about our webpage the most?</span>
+            <select value="default" id="dropdown">
+    <option value="default">Select</option>
+    <option value="default">Colors</option>
+    <option value="default">Design</option>
+    <option value="default">Content</option>
+    <option value="default">Nothing</option>
+</select>
+        </section>
+        <section class="radio-selection">
+            <span class="radio-text">In a scale of 1 to 5, how much do you like it? Being 1 the worst and 5 the best grade.</span>
+            <input type="radio" name="grade" value="1"> 1 </input>
+            <input type="radio" name="grade" value="2"> 2 </input>
+            <input type="radio" name="grade" value="3"> 3 </input>
+            <input type="radio" name="grade" value="4"> 4 </input>
+            <input type="radio" name="grade" value="5"> 5 </input>
+        </section>
+        <section class="checkbox-selection">
+            <span class="checkbox-text">What topic should we talk next?</span><br>
+            <div class="checkbox-options">
+                <input type="checkbox" name="topics" value="1">Pineapples</input>
+                <input type="checkbox" name="topics" value="2">Ninja Cat</input>
+                <input type="checkbox" name="topics" value="3">Kittens</input>
+                <input type="checkbox" name="topics" value="4">Puppies</input>
+                <input type="checkbox" name="topics" value="5">Bananas</input>
+            </div>
+        </section>
+        <section class="textbox-selection">
+            <span class="comments-text">Any comments suggestions?</span>
+            <textarea id="comment" row="5" cols="60">
+Write here additional thoughts.
+</textarea>
+        </section>
+        <input type="submit" id="submit" value="Send"></input>
+        </form>
+    </div>
+</body>
+
+</html>
