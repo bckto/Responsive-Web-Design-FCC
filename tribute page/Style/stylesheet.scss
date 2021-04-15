@@ -1,0 +1,114 @@
+$bodyBackground: #a3d5d3;
+$yellowBackground: #fbf27e;
+$whiteColor: #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bodyBackground;
+    font-family: 'Comfortaa';
+    font-size: 0.8rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.image-container {
+    background-color: $whiteColor;
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 490px;
+    max-height: 810px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content-container {
+    display: flex;
+    flex-direction: column;
+    border: 15px solid $whiteColor;
+    width: 400px;
+    height: 803px;
+}
+
+.title-box {
+    background-color: $whiteColor;
+}
+
+.title {
+    background-color: $yellowBackground;
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.quote-box {
+    background-color: $whiteColor;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.sinopsis {
+    background-color: $yellowBackground;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.tribute-info {
+    color: #000;
+    font-weight: 600;
+    text-indent: 50px;
+    text-align: justify;
+    font-family: 'Montserrat';
+    padding: 15px 15px;
+    background-color: $whiteColor;
+    overflow-y: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+.footer {
+    color: #000;
+    font-weight: 600;
+    background-color: $whiteColor;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media all and (max-width: 480px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container {
+        background-color: $whiteColor;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    }
+    .tribute-info {
+        overflow-y: hidden;
+        height: fit-content;
+    }
+    .text-content-container {
+        height: fit-content;
+    }
+}
