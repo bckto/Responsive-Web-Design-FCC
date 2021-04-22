@@ -1,1 +1,93 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.nav-column {
+  width: 200px;
+  height: 100vh;
+  color: #FFFFFA;
+  border: 2px solid #247B7B;
+  border-left: none;
+  border-bottom: none;
+  background-color: #44A1A0;
+}
+
+.nav-column > nav > ul {
+  margin-top: -20px;
+}
+
+.nav-column > nav > ul > li {
+  height: 40px;
+  width: 180px;
+  margin-bottom: 5px;
+}
+
+.nav-li,
+.back-top-btn {
+  width: 100%;
+  padding: 10px;
+}
+
+.nav-li:hover,
+.back-top-btn:hover {
+  background-color: #4ECDC4;
+  color: #083c41;
+}
+
+.back-top-btn {
+  position: fixed;
+  bottom: 30px;
+  width: 180px;
+}
+
+a:link {
+  color: #FFFFFA;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+
+a:visited {
+  color: #083c41;
+}
+
+a:hover {
+  color: #292F36;
+}
+
+.header-bar {
+  width: 180px;
+  height: 50px;
+  padding: 10px 5px;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: #135252;
+  border-bottom: 2px solid #247B7B;
+}
+
+.content-column {
+  padding: 10px;
+  margin: 10px;
+}
+
+@media all and (max-width: 480px) {
+  .nav-column {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
