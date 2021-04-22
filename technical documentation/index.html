@@ -17,31 +17,45 @@
                 <ul>
                     <li>
                         <a href="#Introduction" class="nav-link">
-                            <div class="nav-li">Introduction</div>
+                            <div class="nav-li">
+                                <img src="chevron.svg" alt="arrow pointed to the right" class="arrow-right" />Introduction
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#Getting_started" class="nav-link">
-                            <div class="nav-li">Getting started</div>
+                            <div class="nav-li">
+                                <img src="chevron.svg" alt="arrow pointed to the right" class="arrow-right" />Getting started
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#Language_basics" class="nav-link">
-                            <div class="nav-li">Language basics</div>
+                            <div class="nav-li">
+                                <img src="chevron.svg" alt="arrow pointed to the right" class="arrow-right" />Language basics
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#Data_types" class="nav-link">
-                            <div class="nav-li">Data types</div>
+                            <div class="nav-li">
+                                <img src="chevron.svg" alt="arrow pointed to the right" class="arrow-right" />Data types
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#More_information" class="nav-link">
-                            <div class="nav-li">More information</div>
+                            <div class="nav-li">
+                                <img src="chevron.svg" alt="arrow pointed to the right" class="arrow-right" />More information
+                            </div>
                         </a>
                     </li>
-                    <li class="back-top-btn">
-                        <a href="#navbar">Back to the top</a>
+                    <li>
+                        <a href="#navbar">
+                            <div class="back-top-btn">
+                                <img src="chevron.svg" alt="arrow pointed to the top" class="arrow-top" />Back to the top
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -59,7 +73,7 @@
             </section>
             <section class="main-section" id="Getting_started">
                 <h1>Getting Started</h1>
-                <h2>What tools professionals use?</h2>
+                <h3>What tools professionals use?</h3>
                 <ul>
                     <li>
                         A computer. Maybe that sounds obvious to some people, but some of you are reading this article on your phone or a library computer. For serious web development, it's better to invest in a desktop or laptop computer running Windows, macOS or Linux.
@@ -100,49 +114,54 @@
                 <p>
                     Variables Variables are containers that store values. You start by declaring a variable with the var (less recommended, dive deeper for the explanation) or the let keyword, followed by the name you give to the variable:
                 </p>
-                <p><code>let myVariable;</code></p>
+                <div class="code-div"><code>let myVariable;</code></div>
                 <p>After declaring a variable, you can give it a value:</p>
 
-                <code>myVariable = 'Bob';</code>
+                <div class="code-div"><code>myVariable = 'Bob';</code></div>
                 <p>Also, you can do both these operations on the same line:</p>
 
-                <code>let myVariable = 'Bob';</code>
+                <div class="code-div"><code>let myVariable = 'Bob';</code></div>
                 <p>You retrieve the value by calling the variable name:</p>
 
-                <code>myVariable;</code>
+                <div class="code-div"><code>myVariable;</code></div>
                 <p>
                     After assigning a value to a variable, you can change it later in the code:
                 </p>
 
-                <code>let myVariable = 'Bob';</code>
-                <code>myVariable = 'Steve';</code>
+                <div class="code-div"><code>let myVariable = 'Bob';</code></div>
+                <div class="code-div"><code>myVariable = 'Steve';</code></div>
             </section>
             <section class="main-section" id="Data_types">
                 <h1>Data types</h1>
                 <p>
                     String: This is a sequence of text known as a string. To signify that the value is a string, enclose it in single quote marks.
                 </p>
-                <code>let myVariable = 'Bob';</code>
+                <div class="code-div"><code>let myVariable = 'Bob';</code></div>
                 <p>Number:This is a number. Numbers don't have quotes around them.</p>
-                <code>let myVariable = 10;</code>
+                <div class="code-div"><code>let myVariable = 10;</code></div>
                 <p>
                     Boolean:This is a True/False value. The words true and false are special keywords that don't need quote marks.
                 </p>
-                <code>let myVariable = true;</code>
+                <div class="code-div"><code>let myVariable = true;</code></div>
                 <p>
                     Array:This is a structure that allows you to store multiple values in a single reference.
                 </p>
-                <code>let myVariable = [1,'Bob','Steve',10]; Refer to each member of the
-            array like this: myVariable[0], myVariable[1], etc.</code
-          >
+                <div class="code-div">
+                    <code>let myVariable = [1,'Bob','Steve',10]; Refer to each member of
+              the array like this: myVariable[0], myVariable[1], etc.</code
+            >
+          </div>
           <p>
             This can be anything. Everything in JavaScript is an object and can
             be stored in a variable. Keep this in mind as you learn.
           </p>
-          <code
-            >let myVariable = document.querySelector('h1'); All of the above
-            examples too.</code
-          >
+          <div class="code-div">
+            <code
+              >let myVariable = 
+              document.querySelector('h1') 
+             </code
+            > 
+          </div>
         </section>
         <section class="main-section" id="More_information">
           <h1>

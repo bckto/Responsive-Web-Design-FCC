@@ -8,11 +8,13 @@
     display: flex;
     flex-direction: row wrap;
     align-content: flex-start;
+    overflow: hidden;
 }
 
 .nav-column {
     width: 200px;
-    height: 100vh;
+    height: auto;
+    float: left;
     color: #FFFFFA;
     border: 2px solid #247B7B;
     border-left: none;
@@ -48,6 +50,21 @@
     width: 180px;
 }
 
+.arrow-right {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    transform: rotate(270deg);
+}
+
+.arrow-top {
+    width: 15px;
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    transform: rotate(180deg);
+}
+
 a:link {
     color: #FFFFFA;
     text-decoration: none;
@@ -74,12 +91,53 @@ a:hover {
 }
 
 .content-column {
-    padding: 10px;
+    padding: 5px 20px 10px 20px;
+    margin: 0 20px 10px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.main-section>h1,
+.main-section>h2 {
+    margin: 10px 0px;
+}
+
+.main-section>p {
+    text-indent: 1rem;
+}
+
+.main-section>ul>li {
+    margin-left: 30px;
+}
+
+.code-div {
     margin: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.main-section>div>code {
+    background-color: #f1f1f1;
 }
 
 @media all and (max-width: 480px) {
     .nav-column {
         height: auto;
+        width: 160px;
+    }
+    .content-column {
+        padding: 5px 10px;
+        margin: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .main-section {
+        text-indent: 1rem;
+    }
+    .main-section>ul>li {
+        margin-top: 5px;
+    }
+    .header-bar {
+        width: 160px;
     }
 }
