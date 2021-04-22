@@ -1,3 +1,9 @@
+# Technical Documentation Page - Free Code Camp exercise
+
+As part of the FCC for Responsive Web Design certificate, it is asked to build a mock technical documentation page. 
+
+I built the basic HTML following the exercise standards from FCC user story: 
+
 User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
 
 User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
@@ -27,3 +33,5 @@ User Story #13: When I click on a navbar element, the page should navigate to th
 User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
 
 User Story #15: My Technical Documentation page should use at least one media query.
+
+# Try it out [here](https://codepen.io/CreativeBee/full/eYgbZWz)
