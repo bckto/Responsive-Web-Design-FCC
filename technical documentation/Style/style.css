@@ -7,6 +7,7 @@
 
 body {
   font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-container {
@@ -85,12 +86,20 @@ a:link {
   font-size: 1.1rem;
 }
 
+.mdn-link {
+  color: #083c41;
+}
+
 a:visited {
   color: #083c41;
 }
 
 a:hover {
   color: #292F36;
+}
+
+.mdn-link:hover {
+  color: #44A1A0;
 }
 
 .header-bar {
