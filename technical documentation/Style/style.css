@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  font-size: 1rem;
+}
+
 .main-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,6 +138,12 @@ a:hover {
     height: auto;
     width: 160px;
   }
+  .nav-column > nav > ul > li {
+    width: 160px;
+  }
+  .nav-li {
+    font-size: 1rem;
+  }
   .content-column {
     padding: 5px 10px;
     margin: 0;
@@ -146,7 +156,8 @@ a:hover {
   .main-section > ul > li {
     margin-top: 5px;
   }
-  .header-bar {
+  .header-bar,
+  .back-top-btn {
     width: 160px;
   }
 }
