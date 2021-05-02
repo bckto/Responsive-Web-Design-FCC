@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "description": "User Story #1: My portfolio should have a welcome section with an id of welcome-section.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bckto/Responsive-Web-Design-FCC.git"
+  },
+  "keywords": [
+    "FreeCodeCamp",
+    "responsive"
+  ],
+  "author": "Brenda C.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bckto/Responsive-Web-Design-FCC/issues"
+  },
+  "homepage": "https://github.com/bckto/Responsive-Web-Design-FCC#readme",
+  "dependencies": {
+    "less": "^4.1.1"
+  }
+}
