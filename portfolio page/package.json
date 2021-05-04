@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/bckto/Responsive-Web-Design-FCC#readme",
   "dependencies": {
-    "less": "^4.1.1"
+    "less": "^4.1.1",
+    "less-watch-compiler": "^1.14.6"
   }
 }

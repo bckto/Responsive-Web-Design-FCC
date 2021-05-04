@@ -1,0 +1,87 @@
+@cerise: #da4167;
+@coral: #f78764;
+@middleRed: #d78a76;
+@orange: #fc9e4f;
+@beige: #f0d8b4;
+@navyBlue: #163761;
+@queenBlue: #376996;
+@grape:#9E3FAE;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navigation {
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: #000;
+
+  ul {
+    color: #fff;
+    display: flex;
+    list-style: none;
+    text-align: start;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      &:visited {
+        color: #fff;
+      }
+      &:hover {
+        color: @orange;
+      }
+      &:link &:active {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.welcome-section {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+  img {
+    width: 100vw;
+    height: 90vh;
+  }
+  .title-top {
+    font-size: 3rem;
+    position: absolute;
+    top: 100px;
+    right: 5%;
+  }
+
+  .title-bottom {
+    font-size: 3rem;
+    position: absolute;
+    top: 150px;
+    right: 5%;
+  }
+}
+
+.divider {
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    img{
+        margin-top: 10px;
+        width: 50px;
+        height: 40px;
+    }
+}
+.projects{
+    background-color: @grape;
+}

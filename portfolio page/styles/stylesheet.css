@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif;
+}
+.navigation {
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: #000;
+}
+.navigation ul {
+  color: #fff;
+  display: flex;
+  list-style: none;
+  text-align: start;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+}
+.navigation ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.navigation ul a:visited {
+  color: #fff;
+}
+.navigation ul a:hover {
+  color: #fc9e4f;
+}
+.navigation ul a:link .navigation ul a:active {
+  color: #fff;
+}
+.welcome-section {
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+}
+.welcome-section img {
+  width: 100vw;
+  height: 90vh;
+}
+.welcome-section .title-top {
+  font-size: 3rem;
+  position: absolute;
+  top: 100px;
+  right: 5%;
+}
+.welcome-section .title-bottom {
+  font-size: 3rem;
+  position: absolute;
+  top: 150px;
+  right: 5%;
+}
+.divider {
+  background-color: #000;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.divider img {
+  margin-top: 10px;
+  width: 50px;
+  height: 40px;
+}
+.projects {
+  background-color: #9E3FAE;
+}
