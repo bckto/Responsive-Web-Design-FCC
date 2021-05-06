@@ -67,9 +67,13 @@ body {
   width: 50px;
   height: 40px;
 }
+.projects {
+  background-color: #9e3fae;
+}
 .projects .project-title {
   height: 60px;
   display: flex;
+  padding-top: 60px;
   justify-content: center;
   background-color: #9e3fae;
 }
@@ -78,38 +82,48 @@ body {
   font-size: 3rem;
   text-transform: uppercase;
 }
+.projects .ul-wrapper {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
 .projects ul {
   width: 800px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin-bottom: 60px;
+  margin-top: 30px;
   flex-direction: row;
   justify-content: space-evenly;
 }
 .projects ul li {
   width: 350px;
-  background-color: #9e3fae;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #34143a;
 }
 .projects ul li > a {
-  color: #fc9e4f;
+  color: #fff;
   font-weight: 600;
   padding-bottom: 10px;
   text-decoration: none;
 }
 .projects ul li > a:visited {
-  color: #fc9e4f;
-}
-.projects ul li > a:hover {
   color: #fff;
 }
+.projects ul li > a:hover {
+  color: #9e3fae;
+}
 .projects ul li > a:link .projects ul li > a:active {
-  color: #fc9e4f;
+  color: #fff;
 }
 .projects ul .project-img {
   width: 100%;
   height: 80%;
-  border: 5px solid #9e3fae;
   padding-bottom: 10px;
+  border: 10px solid #34143a;
+  border-radius: 5px;
 }
 .projects ul .img-title {
   width: 100%;
@@ -118,8 +132,30 @@ body {
   font-size: 1.3rem;
   padding: 10px;
   justify-content: center;
-  background-color: #9e3fae;
+  background-color: #34143a;
   text-transform: capitalize;
+}
+.contact {
+  background-color: #6071C9;
+}
+.contact .contact-title {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: #6071C9;
+}
+.contact .contact-title h1 {
+  margin: 60px 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.contact .contact-links {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+.contact .contact-links a {
+  margin: 60px 0;
 }
 @media all and (max-device-width: 480px) {
   .welcome-section h1 {
@@ -133,12 +169,19 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .projects ul li {
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0px;
+  }
   .projects .project-img {
     width: 100%;
     height: 70%;
     margin: 0;
     margin-top: 10px;
     border: 5px solid #fff;
+    border-radius: 0px;
   }
   .projects .divider {
     display: none;
