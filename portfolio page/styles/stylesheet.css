@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif;
+}
+.navigation {
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: #000;
+}
+.navigation ul {
+  color: #fff;
+  display: flex;
+  list-style: none;
+  text-align: start;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+}
+.navigation ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.navigation ul a:visited {
+  color: #fff;
+}
+.navigation ul a:hover {
+  color: #fc9e4f;
+}
+.navigation ul a:link .navigation ul a:active {
+  color: #fff;
+}
+.welcome-section {
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+}
+.welcome-section img {
+  width: 100vw;
+  height: 90vh;
+}
+.welcome-section .title-top {
+  font-size: 3rem;
+  position: absolute;
+  top: 100px;
+  right: 5%;
+}
+.welcome-section .title-bottom {
+  font-size: 3rem;
+  position: absolute;
+  top: 150px;
+  right: 5%;
+}
+.divider {
+  background-color: #000;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.divider img {
+  margin-top: 10px;
+  width: 50px;
+  height: 40px;
+}
+.projects {
+  background-color: #9e3fae;
+}
+.projects .project-title {
+  height: 60px;
+  display: flex;
+  padding-top: 60px;
+  justify-content: center;
+  background-color: #9e3fae;
+}
+.projects .project-title h1 {
+  margin-top: 10px;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.projects .ul-wrapper {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+.projects ul {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.projects ul li {
+  width: 350px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #34143a;
+}
+.projects ul li > a {
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+.projects ul li > a:visited {
+  color: #fff;
+}
+.projects ul li > a:hover {
+  color: #9e3fae;
+}
+.projects ul li > a:link .projects ul li > a:active {
+  color: #fff;
+}
+.projects ul .project-img {
+  width: 100%;
+  height: 80%;
+  padding-bottom: 10px;
+  border: 10px solid #34143a;
+  border-radius: 5px;
+}
+.projects ul .img-title {
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 10px;
+  justify-content: center;
+  background-color: #34143a;
+  text-transform: capitalize;
+}
+.contact {
+  background-color: #6071C9;
+}
+.contact .contact-title {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: #6071C9;
+}
+.contact .contact-title h1 {
+  margin: 60px 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.contact .contact-links {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+.contact .contact-links a {
+  margin: 60px 0;
+}
+@media all and (max-device-width: 480px) {
+  .welcome-section h1 {
+    font-size: 5px;
+  }
+  .welcome-section img {
+    width: 100vw;
+    height: 70vh;
+  }
+  .projects ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects ul li {
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .projects .project-img {
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    margin-top: 10px;
+    border: 5px solid #fff;
+    border-radius: 0px;
+  }
+  .projects .divider {
+    display: none;
+  }
+}
